@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <!-- 1. CONFIGURAÇÕES E RECURSOS DA PÁGINA -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Entrar | Nova Vida Tech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Play:wght@400;700&family=Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- 2. CABEÇALHO E MENU PRINCIPAL -->
+    <header class="site-header">
+      <a class="brand" href="index.html"><img class="brand-logo" src="logooficial.png" alt="TechNova - Technology and Solutions"></a>
+      <div class="header-actions" style="margin-left:auto"><a class="btn btn-outline" href="index.html">Voltar</a><a class="btn btn-gold" href="cadastrar.html">Cadastrar</a></div>
+    </header>
+    <!-- 4. CONTEÚDO PRINCIPAL -->
+    <main class="auth-wrap">
+      <!-- 4.1. FORMULÁRIO E DADOS -->
+      <form class="auth-card" onsubmit="event.preventDefault(); document.querySelector('.fake-submit').click()">
+        <span class="eyebrow dark">ÁREA DO CLIENTE</span>
+        <h1>Entrar</h1>
+        <p>Acesse seus pedidos, favoritos e orçamentos.</p>
+        <div class="field"><label>E-mail</label><input type="email" required placeholder="voce@empresa.com"></div>
+        <div class="field"><label>Senha</label><input type="password" required placeholder="••••••••"></div>
+        <button class="btn btn-gold fake-submit" style="width:100%;margin-top:10px">Entrar</button>
+        <div class="auth-footer">Ainda não tem cadastro?<a href="cadastrar.html">Criar conta</a></div>
+      </form>
+    </main>
+    <!-- 6. JAVASCRIPT -->
+    <script src="js/main.js">
+    </script>
+  </body>
+</html>

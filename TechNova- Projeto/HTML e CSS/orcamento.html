@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <!-- 1. CONFIGURAÇÕES E RECURSOS DA PÁGINA -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Orçamento | Nova Vida Tech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Play:wght@400;700&family=Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- 2. CABEÇALHO E MENU PRINCIPAL -->
+    <header class="site-header">
+      <a class="brand" href="index.html"><img class="brand-logo" src="logooficial.png" alt="TechNova - Technology and Solutions"></a>
+      <button class="menu-toggle">☰</button>
+      <nav class="main-nav" aria-label="Menu principal"><a href="catalogo.html">Catálogo</a><a href="solucoes.html">Soluções</a><a href="orcamento.html">Orçamento</a><a href="sobre.html">Sobre nós</a><a href="carrinho.html" class="nav-cart">Carrinho <span class="cart-count">0</span></a></nav>
+      <div class="header-actions"><a class="btn btn-outline" href="entrar.html">Entrar</a><a class="btn btn-gold" href="cadastrar.html">Cadastrar</a></div>
+    </header>
+    <!-- 3. TÍTULO E APRESENTAÇÃO DA PÁGINA -->
+    <section class="page-hero">
+      <span class="eyebrow">ORÇAMENTO</span>
+      <h1>Conte o que sua operação precisa.</h1>
+      <p>Preencha os dados para receber uma proposta. Ao final, você poderá avançar para a etapa de pagamento.</p>
+    </section>
+    <!-- 4.1. FORMULÁRIO E DADOS -->
+    <form class="form-card" id="budget-form">
+      <div class="section-heading">
+        <span class="eyebrow dark">DADOS DO PROJETO</span>
+        <h2>Solicitar proposta</h2>
+      </div>
+      <div class="form-grid" style="margin-top:25px">
+        <div class="field"><label>Nome / empresa</label><input required placeholder="Sua empresa"></div>
+        <div class="field"><label>E-mail</label><input type="email" required placeholder="voce@empresa.com"></div>
+        <div class="field"><label>Telefone</label><input placeholder="(00) 00000-0000"></div>
+        <div class="field"><label>Tipo de necessidade</label><select required><option value="">Selecione</option><option>Aumentar produtividade</option><option>Substituir equipamento</option><option>Ampliar produção</option><option>Automatizar processo</option><option>Outro</option></select></div>
+        <div class="field full"><label>Equipamentos de interesse</label><input placeholder="Ex.: Estação Pro 400, Control X2..."></div>
+        <div class="field full"><label>Descreva sua necessidade</label><textarea rows="6" required placeholder="Conte sobre sua operação, volume, prazo e o que deseja melhorar."></textarea></div>
+      </div>
+      <div class="form-actions"><a class="btn btn-outline" href="catalogo.html">Voltar ao catálogo</a><button class="btn btn-gold" type="submit">Enviar e seguir para pagamento</button></div>
+    </form>
+    <!-- 5. RODAPÉ -->
+    <footer class="footer">
+      <div class="footer-brand">
+        <img class="brand-logo1" src="logorodape.png" alt="TechNova - Technology and Solutions"></a>
+      </div>
+      <div>
+        <h3>Menu</h3>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="solucoes.html">Soluções</a>
+      </div>
+      <div>
+        <h3>Etapas</h3>
+        <a href="#">1. Orçamento</a>
+        <a href="pagamento.html">2. Pagamento</a>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <p>contato@novavidatech.com</p>
+      </div>
+      <div class="footer-bottom">© 2026 Nova Vida Tech</div>
+    </footer>
+    <!-- 6. JAVASCRIPT -->
+    <script src="js/main.js">
+    </script>
+  </body>
+</html>

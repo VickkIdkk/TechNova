@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <!-- 1. CONFIGURAÇÕES E RECURSOS DA PÁGINA -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cadastrar | Nova Vida Tech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Play:wght@400;700&family=Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- 2. CABEÇALHO E MENU PRINCIPAL -->
+    <header class="site-header">
+      <a class="brand" href="index.html"><img class="brand-logo" src="logooficial.png" alt="TechNova - Technology and Solutions"></a>
+      <div class="header-actions" style="margin-left:auto"><a class="btn btn-outline" href="index.html">Voltar</a><a class="btn btn-gold" href="entrar.html">Entrar</a></div>
+    </header>
+    <!-- 4. CONTEÚDO PRINCIPAL -->
+    <main class="auth-wrap">
+      <!-- 4.1. FORMULÁRIO E DADOS -->
+      <form class="auth-card" onsubmit="event.preventDefault(); document.querySelector('.fake-submit').click()">
+        <span class="eyebrow dark">NOVO CLIENTE</span>
+        <h1>Cadastrar</h1>
+        <p>Crie sua conta para acompanhar propostas e guardar favoritos.</p>
+        <div class="field"><label>Nome / empresa</label><input required></div>
+        <div class="field"><label>E-mail</label><input type="email" required></div>
+        <div class="field"><label>Senha</label><input type="password" minlength="6" required></div>
+        <div class="field"><label>Confirmar senha</label><input type="password" minlength="6" required></div>
+        <button class="btn btn-gold fake-submit" style="width:100%;margin-top:10px">Criar conta</button>
+        <div class="auth-footer">Já possui conta?<a href="entrar.html">Entrar</a></div>
+      </form>
+    </main>
+    <!-- 6. JAVASCRIPT -->
+    <script src="js/main.js">
+    </script>
+  </body>
+</html>
