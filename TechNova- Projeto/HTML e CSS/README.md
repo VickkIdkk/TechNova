@@ -1,4 +1,4 @@
-# Nova Vida Tech — código organizado
+# Tech Nova — código organizado
 
 Esta versão mantém a estrutura do site e organiza os arquivos HTML, CSS e JavaScript
 com indentação e comentários explicativos.
